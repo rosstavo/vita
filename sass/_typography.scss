@@ -1,0 +1,126 @@
+html {
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    font-variant-numeric: lining-nums;
+    font-family: $font__main;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: 400;
+	line-height: 1.333;
+	letter-spacing: -0.0125em;
+
+    strong {
+        font-weight: 700;
+	}
+	
+	em {
+		font-size: 0.9375;
+	}
+}
+
+h1, h2 {
+	font-family: $font__heading;
+	font-weight: 600;
+}
+
+h1 { font-size: 2em; }
+
+h2 { font-size: 1.5em; }
+
+h3 { font-size: 1.25em; }
+
+h4 { font-size: 1.125em; }
+
+h5 { font-size: 1.0625em; }
+
+strong {
+    font-weight: 600;
+}
+
+hr {
+    margin: $gutter__size 0;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	font-size: $font__size-small;
+}
+
+@media screen and ( min-width: $breakpoint-xsmall ) {
+	body,
+	button,
+	input,
+	select,
+	optgroup,
+	textarea {
+		font-size: calc(#{$font__size-small} + 0.5vw);
+	}
+}
+
+@media screen and ( min-width: $breakpoint-medium )  {
+	body,
+	button,
+	input,
+	select,
+	optgroup,
+	textarea {
+		font-size: calc(#{$font__size-medium} + 0.5vw)
+	}
+}
+
+@media screen and ( min-width: $breakpoint-large )  {
+	body,
+	button,
+	input,
+	select,
+	optgroup,
+	textarea {
+		font-size: calc(#{$font__size-large} + 0.5vw)
+	}
+}
+
+@media screen and ( min-width: $breakpoint-xlarge )  {
+	body,
+	button,
+	input,
+	select,
+	optgroup,
+	textarea {
+		font-size: calc(#{$font__size-xlarge} + 0.5vw)
+	}
+}
+
+.underline {
+	background-image: linear-gradient(transparent 0%, transparent 70%, $color--main 70%, $color--main 90%, transparent 90%, transparent);
+
+	&:after {
+		content: '';
+		display: block;
+	}
+
+	.inverted-color-scheme & {
+		background-image: linear-gradient(transparent 0%, transparent 70%, $color--dark 70%, $color--dark 90%, transparent 90%, transparent);
+	}
+}
+
+.no-bullets {
+	padding-left: 0;
+	
+	li {
+		list-style-type: none;
+	}
+}
+
+strong {
+	color: $color--main;
+
+	.inverted-color-scheme &,
+	.footer-inner & {
+		color: $color--light;
+	}
+}

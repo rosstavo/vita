@@ -1,0 +1,23 @@
+$font__heading: europa, sans-serif;
+$font__main: 'DM Sans', sans-serif;
+
+$font__size-base: 13px;
+$font__size-small: $font__size-base + 1px;
+$font__size-medium: $font__size-base + 3px;
+$font__size-large: $font__size-base + 5px;
+$font__size-xlarge: $font__size-base + 7px;
+
+$breakpoint-base: 333px;
+
+$breakpoint-xsmall: $breakpoint-base;
+$breakpoint-small: $breakpoint-base * 1.5;
+$breakpoint-medium: $breakpoint-base * 2;
+$breakpoint-large: $breakpoint-base * 3;
+$breakpoint-xlarge: $breakpoint-base * 4;
+
+$gutter__size: 3em;
+
+$color--main: #00afaa;
+$color--light: #E7E9EC;
+$color--dark: #007580;
+$color--accent: #f9ae00;
