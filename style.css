@@ -537,7 +537,8 @@ a {
   a:hover {
     color: #007580; }
   .privacy a,
-  .panel a {
+  .panel a,
+  .footer-inner a {
     color: white; }
 
 .btn {
